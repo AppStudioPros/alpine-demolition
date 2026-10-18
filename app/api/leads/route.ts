@@ -3,12 +3,26 @@ import { createClient } from "@supabase/supabase-js";
 import { Resend } from "resend";
 import crypto from "crypto";
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY!
-);
+// Lazy clients — initialized on first request, not at module load (avoids build-time env errors)
+let _supabase: ReturnType<typeof createClient> | null = null;
+let _resend: Resend | null = null;
 
-const resend = new Resend(process.env.RESEND_API_KEY!);
+function getSupabase() {
+  if (!_supabase) {
+    _supabase = createClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.SUPABASE_SERVICE_ROLE_KEY!
+    );
+  }
+  return _supabase;
+}
+
+function getResend() {
+  if (!_resend) {
+    _resend = new Resend(process.env.RESEND_API_KEY!);
+  }
+  return _resend;
+}
 
 // Simple in-memory rate limit: IP -> [timestamps]
 const rateLimitMap = new Map<string, number[]>();
@@ -81,6 +95,7 @@ export async function POST(request: NextRequest) {
 
     // Write to Supabase
     try {
+      const supabase = getSupabase();
       const { error } = await supabase.from("ad_leads").insert({
         full_name,
         email,
@@ -104,6 +119,7 @@ export async function POST(request: NextRequest) {
 
     // Send email via Resend
     try {
+      const resend = getResend();
       const subject = `New Project Inquiry — ${project_type || "General"} | ${city_zip}`;
 
       const htmlBody = `
