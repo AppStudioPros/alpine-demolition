@@ -1,14 +1,5 @@
 @import "tailwindcss";
 
-@theme {
-  --color-alpine-green: #165B38;
-  --color-alpine-highlight: #76B852;
-  --color-deep-slate: #17262B;
-  --color-warm-white: #F4F2ED;
-  --color-page-white: #FFFFFF;
-  --color-hairline: #DEE3DC;
-}
-
 :root {
   --alpine-green: #165B38;
   --alpine-highlight: #76B852;
