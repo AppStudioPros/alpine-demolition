@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Briefcase, ChevronRight, CheckCircle, MapPin } from "lucide-react";
 import Footer from "@/components/Footer";
-import LeadForm from "@/components/LeadForm";
+import ApplicationForm from "@/components/ApplicationForm";
 
 export const metadata: Metadata = {
   title: "Job Openings | Alpine Demolition",
@@ -150,7 +150,7 @@ export default function JobOpenings() {
             </p>
           </div>
           <div className="bg-[#F4F2ED] rounded-xl border border-[#DEE3DC] p-8 sm:p-10">
-            <LeadForm />
+            <ApplicationForm />
           </div>
         </div>
       </section>
