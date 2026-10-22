@@ -43,15 +43,15 @@ export default function CompanyProfile() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#17262B] text-white min-h-[320px] flex flex-col justify-center items-center">
-        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 text-center w-full">
+      <section className="bg-[#17262B] text-white min-h-[320px] flex flex-col justify-center items-center text-center">
+        <div className="max-w-4xl mx-auto px-6 w-full text-center">
           <p className="text-[#76B852] text-xs font-bold tracking-[0.2em] uppercase mb-5">
             Company Profile
           </p>
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6 max-w-3xl">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6 max-w-3xl mx-auto text-center">
             Decades of Demolition Experience in Colorado.
           </h1>
-          <p className="text-white/70 text-lg max-w-2xl leading-relaxed mx-auto">
+          <p className="text-white/70 text-lg max-w-2xl leading-relaxed mx-auto text-center">
             Alpine Demolition began as a small demolition company and has grown into a full-service
             commercial and industrial contractor with a track record that spans structures of all
             types and scales across Colorado.

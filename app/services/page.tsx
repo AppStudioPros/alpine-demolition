@@ -15,15 +15,15 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#17262B] text-white min-h-[320px] flex flex-col justify-center items-center">
-        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 text-center w-full">
+      <section className="bg-[#17262B] text-white min-h-[320px] flex flex-col justify-center items-center text-center">
+        <div className="max-w-4xl mx-auto px-6 w-full text-center">
           <p className="text-[#76B852] text-xs font-bold uppercase tracking-widest mb-4">
             What We Do
           </p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 max-w-2xl">
+          <h1 className="text-4xl sm:text-5xl font-extrabold mb-6 max-w-2xl mx-auto text-center">
             Full-Scope Demolition and Remediation Services
           </h1>
-          <p className="text-white/70 text-lg max-w-xl leading-relaxed mx-auto">
+          <p className="text-white/70 text-lg max-w-2xl leading-relaxed mx-auto text-center">
             Alpine Demolition serves commercial, industrial, and government clients throughout
             Colorado with a structured, safety-first approach on every project.
           </p>
