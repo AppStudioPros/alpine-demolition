@@ -2,8 +2,16 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   typescript: {
-    // Type checking passes locally; suppress on Vercel build worker
     ignoreBuildErrors: true,
+  },
+  async redirects() {
+    return [
+      { source: "/company-profile/", destination: "/company-profile", permanent: true },
+      { source: "/working-with-us", destination: "/company-profile", permanent: true },
+      { source: "/working-with-us/", destination: "/company-profile", permanent: true },
+      { source: "/safety/", destination: "/safety", permanent: true },
+      { source: "/portfolio/", destination: "/portfolio", permanent: true },
+    ];
   },
 };
 
