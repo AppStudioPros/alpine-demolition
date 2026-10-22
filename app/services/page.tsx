@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ChevronRight, ShieldCheck } from "lucide-react";
+import { ChevronRight } from "lucide-react";
+import { ShieldCheck } from "lucide-react";
 import Footer from "@/components/Footer";
 import ServicesTabs from "@/components/ServicesTabs";
 
@@ -14,7 +15,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#17262B] text-white py-20 md:py-28">
+      <section className="bg-[#17262B] text-white py-24">
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6">
           <p className="text-[#76B852] text-xs font-bold uppercase tracking-widest mb-4">
             What We Do
@@ -26,20 +27,6 @@ export default function ServicesPage() {
             Alpine Demolition serves commercial, industrial, and government clients throughout
             Colorado with a structured, safety-first approach on every project.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 mt-10">
-            <Link
-              href="/contact"
-              className="inline-flex items-center gap-2 bg-[#165B38] hover:bg-[#1a7044] text-white font-semibold px-8 py-4 rounded text-base transition-colors duration-200"
-            >
-              Discuss Your Project <ChevronRight size={18} />
-            </Link>
-            <a
-              href="tel:3034213366"
-              className="inline-flex items-center gap-2 border border-white/40 hover:border-white text-white font-semibold px-8 py-4 rounded text-base transition-colors duration-200"
-            >
-              Call 303-421-3366
-            </a>
-          </div>
         </div>
       </section>
 

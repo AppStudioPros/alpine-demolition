@@ -161,13 +161,19 @@ export default function ServicesTabs() {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-8 pt-6 border-t border-[#DEE3DC]">
+                <div className="mt-8 pt-6 border-t border-[#DEE3DC] flex flex-wrap gap-3">
                   <Link
                     href="/contact"
                     className="inline-flex items-center gap-2 bg-[#165B38] hover:bg-[#1a7044] text-white font-semibold px-6 py-3 rounded text-sm transition-colors duration-200"
                   >
                     Discuss This Service <ChevronRight size={16} />
                   </Link>
+                  <a
+                    href="tel:3034213366"
+                    className="inline-flex items-center gap-2 border border-[#DEE3DC] hover:border-[#165B38] text-[#17262B] font-semibold px-6 py-3 rounded text-sm transition-colors duration-200"
+                  >
+                    Call 303-421-3366
+                  </a>
                 </div>
               </div>
             </div>
