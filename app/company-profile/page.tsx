@@ -62,8 +62,8 @@ export default function CompanyProfile() {
       {/* About */}
       <section className="bg-white py-20">
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="text-center">
               <p className="text-[#165B38] text-xs font-bold uppercase tracking-widest mb-4">
                 About Alpine
               </p>
@@ -91,7 +91,7 @@ export default function CompanyProfile() {
               </div>
             </div>
             <div>
-              <p className="text-[#165B38] text-xs font-bold uppercase tracking-widest mb-4">
+              <p className="text-[#165B38] text-xs font-bold uppercase tracking-widest mb-4 text-center">
                 Services Provided
               </p>
               <ul className="space-y-3">
@@ -122,7 +122,7 @@ export default function CompanyProfile() {
             {commitments.map((c) => {
               const Icon = c.icon;
               return (
-                <div key={c.title} className="bg-white rounded-lg border border-[#DEE3DC] p-8">
+                <div key={c.title} className="bg-white rounded-lg border border-[#DEE3DC] p-8 text-center flex flex-col items-center">
                   <div className="w-12 h-12 rounded-lg bg-[#17262B] flex items-center justify-center mb-5">
                     <Icon size={22} className="text-[#76B852]" />
                   </div>
@@ -139,7 +139,7 @@ export default function CompanyProfile() {
       <section className="bg-[#17262B] text-white py-20">
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
+            <div className="text-center">
               <p className="text-[#76B852] text-xs font-bold uppercase tracking-widest mb-4">
                 Deconstruction & Recovery
               </p>
@@ -171,7 +171,7 @@ export default function CompanyProfile() {
                 { label: "Wood", detail: "Salvaged timbers and dimensional lumber recovered for reuse or resale" },
                 { label: "Other Materials", detail: "Brick, masonry, and architectural elements recovered as site conditions allow" },
               ].map((m) => (
-                <div key={m.label} className="bg-white/5 border border-white/10 rounded-lg p-5">
+                <div key={m.label} className="bg-white/5 border border-white/10 rounded-lg p-5 text-center">
                   <p className="text-[#76B852] font-bold text-sm mb-2">{m.label}</p>
                   <p className="text-white/60 text-xs leading-relaxed">{m.detail}</p>
                 </div>

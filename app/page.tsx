@@ -155,7 +155,7 @@ export default function HomePage() {
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6 w-full py-20 md:py-28">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left: copy */}
-            <div className="text-center md:text-left">
+            <div className="text-center">
               <p className="text-[#76B852] text-xs font-bold tracking-[0.2em] uppercase mb-5">
                 Commercial / Industrial / Environmental
               </p>
@@ -168,7 +168,7 @@ export default function HomePage() {
                 Structural demolition, environmental remediation, and material recovery for projects
                 throughout Colorado.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <a
                   href="#callback-form"
                   className="inline-flex items-center justify-center gap-2 bg-[#165B38] hover:bg-[#1a7044] text-white font-semibold px-8 py-4 rounded text-base transition-colors duration-200"

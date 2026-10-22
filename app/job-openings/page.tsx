@@ -54,10 +54,10 @@ export default function JobOpenings() {
       {/* Job listing */}
       <section className="bg-[#F4F2ED] py-20">
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6">
-          <p className="text-[#165B38] text-xs font-bold uppercase tracking-widest mb-3">
+          <p className="text-[#165B38] text-xs font-bold uppercase tracking-widest mb-3 text-center">
             Current Openings
           </p>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#17262B] mb-10">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-[#17262B] mb-10 text-center">
             Open Positions
           </h2>
 

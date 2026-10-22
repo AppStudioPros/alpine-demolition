@@ -55,8 +55,8 @@ export default function Safety() {
       {/* Core statement */}
       <section className="bg-white py-20">
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-            <div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            <div className="text-center">
               <p className="text-[#165B38] text-xs font-bold uppercase tracking-widest mb-4">
                 Our Commitment
               </p>
@@ -101,7 +101,7 @@ export default function Safety() {
                   "All OSHA requirements met — often exceeded",
                   "Ongoing staff training in current regulations and procedures",
                 ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-gray-700 text-sm">
+                  <li key={item} className="flex items-start gap-3 text-gray-700 text-sm text-left">
                     <ShieldCheck size={16} className="text-[#165B38] mt-0.5 shrink-0" />
                     <span>{item}</span>
                   </li>
@@ -127,7 +127,7 @@ export default function Safety() {
             {pillars.map((p) => {
               const Icon = p.icon;
               return (
-                <div key={p.title} className="bg-white rounded-lg border border-[#DEE3DC] p-8">
+                <div key={p.title} className="bg-white rounded-lg border border-[#DEE3DC] p-8 text-center flex flex-col items-center">
                   <div className="w-12 h-12 rounded-lg bg-[#17262B] flex items-center justify-center mb-5">
                     <Icon size={22} className="text-[#76B852]" />
                   </div>
