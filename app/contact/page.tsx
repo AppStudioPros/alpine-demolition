@@ -91,13 +91,18 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Map placeholder */}
-              <div className="mt-6 bg-white border border-[#DEE3DC] rounded-lg overflow-hidden">
-                <div className="aspect-[4/3] bg-gray-100 flex flex-col items-center justify-center text-gray-400">
-                  <MapPin size={32} className="mb-2" />
-                  <p className="text-sm font-medium">Arvada, Colorado</p>
-                  <p className="text-xs mt-1">5790 W 56th Ave Suite C</p>
-                </div>
+              {/* Map */}
+              <div className="mt-6 rounded-lg overflow-hidden border border-[#DEE3DC]">
+                <iframe
+                  title="Alpine Demolition location"
+                  src="https://maps.google.com/maps?q=5790+W+56th+Ave+Suite+C,+Arvada,+CO+80002&output=embed&z=15"
+                  width="100%"
+                  height="280"
+                  style={{ border: 0, display: 'block' }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                />
               </div>
             </div>
 
