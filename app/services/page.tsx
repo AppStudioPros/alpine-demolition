@@ -15,7 +15,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#17262B] text-white py-24">
+      <section className="bg-[#17262B] text-white min-h-[320px] flex items-center">
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6">
           <p className="text-[#76B852] text-xs font-bold uppercase tracking-widest mb-4">
             What We Do

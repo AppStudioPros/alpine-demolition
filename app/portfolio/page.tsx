@@ -14,7 +14,7 @@ export default function Portfolio() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#17262B] text-white py-24">
+      <section className="bg-[#17262B] text-white min-h-[320px] flex items-center">
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6">
           <p className="text-[#76B852] text-xs font-bold tracking-[0.2em] uppercase mb-5">
             Project Portfolio
