@@ -14,15 +14,15 @@ export default function Portfolio() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#17262B] text-white min-h-[320px] flex items-center">
-        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 text-center">
+      <section className="bg-[#17262B] text-white min-h-[320px] flex flex-col justify-center items-center">
+        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 text-center w-full">
           <p className="text-[#76B852] text-xs font-bold tracking-[0.2em] uppercase mb-5">
             Project Portfolio
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6">
             Work That Speaks for Itself.
           </h1>
-          <p className="text-white/70 text-lg max-w-2xl leading-relaxed">
+          <p className="text-white/70 text-lg max-w-2xl leading-relaxed mx-auto">
             20 documented projects — commercial, industrial, institutional, and government demolition
             throughout Colorado. Click any project to expand details and photos.
           </p>
@@ -40,7 +40,7 @@ export default function Portfolio() {
 
       {/* CTA */}
       <section className="bg-[#17262B] text-white py-16">
-        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 text-center">
+        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 text-center w-full">
           <h2 className="text-2xl sm:text-3xl font-extrabold mb-4">
             Discuss a project with Alpine.
           </h2>

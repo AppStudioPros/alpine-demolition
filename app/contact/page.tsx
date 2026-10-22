@@ -14,14 +14,14 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section className="bg-[#17262B] text-white py-20 md:py-24">
-        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 text-center">
+        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 text-center w-full">
           <p className="text-[#76B852] text-xs font-bold uppercase tracking-widest mb-4">
             Get in Touch
           </p>
           <h1 className="text-4xl sm:text-5xl font-extrabold mb-4 max-w-2xl">
             Talk to the Alpine Team
           </h1>
-          <p className="text-white/70 text-lg max-w-xl leading-relaxed">
+          <p className="text-white/70 text-lg max-w-xl leading-relaxed mx-auto">
             Tell us about your site and scope. Alpine will route your request to the right person
             and follow up using the contact details you provide.
           </p>

@@ -43,15 +43,15 @@ export default function CompanyProfile() {
   return (
     <>
       {/* Hero */}
-      <section className="bg-[#17262B] text-white min-h-[320px] flex items-center">
-        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 text-center">
+      <section className="bg-[#17262B] text-white min-h-[320px] flex flex-col justify-center items-center">
+        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 text-center w-full">
           <p className="text-[#76B852] text-xs font-bold tracking-[0.2em] uppercase mb-5">
             Company Profile
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6 max-w-3xl">
             Decades of Demolition Experience in Colorado.
           </h1>
-          <p className="text-white/70 text-lg max-w-2xl leading-relaxed">
+          <p className="text-white/70 text-lg max-w-2xl leading-relaxed mx-auto">
             Alpine Demolition began as a small demolition company and has grown into a full-service
             commercial and industrial contractor with a track record that spans structures of all
             types and scales across Colorado.
@@ -183,7 +183,7 @@ export default function CompanyProfile() {
 
       {/* CTA */}
       <section className="bg-[#F4F2ED] py-16">
-        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 text-center">
+        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 text-center w-full">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#17262B] mb-4">
             Ready to discuss a project?
           </h2>
