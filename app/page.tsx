@@ -83,6 +83,7 @@ const featuredWork = [
     title: "990 Bannock",
     location: "Denver, CO",
     year: "2019",
+    image: "/images/portfolio/990-bannock.jpg",
     desc: "Demolition of a five-story structure exceeding 100,000 sq ft in downtown Denver.",
     tags: ["Structural Demolition", "Urban Site"],
   },
@@ -90,6 +91,7 @@ const featuredWork = [
     title: "Kodak Buildings",
     location: "Windsor, CO",
     year: "2014",
+    image: "/images/portfolio/kodak-buildings.jpg",
     desc: "Over 1,000,000 sq ft of demolition scope at a former industrial complex — one of Alpine's largest historic projects.",
     tags: ["Industrial", "Historic Scope"],
   },
@@ -97,6 +99,7 @@ const featuredWork = [
     title: "Buckley Annex",
     location: "Aurora, CO",
     year: "2014",
+    image: "/images/portfolio/buckley-annex.jpg",
     desc: "Demolition of three former government structures with asbestos abatement and extensive paved-area scope.",
     tags: ["Government", "Abatement"],
   },
@@ -280,9 +283,9 @@ export default function HomePage() {
                 key={project.title}
                 className="bg-white rounded-lg border border-[#DEE3DC] overflow-hidden"
               >
-                {/* Photo placeholder */}
-                <div className="relative aspect-[16/9] bg-[#17262B] flex items-center justify-center">
-                  <Building2 size={40} className="text-white/20" />
+                {/* Project photo */}
+                <div className="relative aspect-[16/9] bg-[#17262B] overflow-hidden">
+                  <Image src={project.image} alt={project.title} fill className="object-cover" unoptimized />
                   <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/70 to-transparent">
                     <p className="text-white font-bold text-base">{project.title}</p>
                     <p className="text-white/70 text-xs">
