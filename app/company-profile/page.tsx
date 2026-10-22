@@ -4,9 +4,10 @@ import { CheckCircle, Recycle, Users, ShieldCheck, ChevronRight } from "lucide-r
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Company Profile | Alpine Demolition",
-  description: "Alpine Demolition has provided structural demolition, environmental remediation, and material recovery services to commercial and industrial clients throughout Colorado for decades.",
-  alternates: { canonical: "/company-profile" },
+  title: 'About Alpine Demolition | Colorado Demolition Contractor',
+  description: 'Alpine Demolition is a full-service commercial and industrial demolition contractor based in Arvada, Colorado. Decades of experience across Colorado\’s most recognized projects.',
+  alternates: { canonical: '/company-profile' },
+  openGraph: { title: 'About Alpine Demolition | Colorado Demolition Contractor', description: 'Alpine Demolition is a full-service commercial and industrial demolition contractor based in Arvada, Colorado. Decades of experience across Colorado\’s most recognized projects.' },
 };
 
 const commitments = [

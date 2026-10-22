@@ -6,9 +6,10 @@ import Footer from "@/components/Footer";
 import ServicesTabs from "@/components/ServicesTabs";
 
 export const metadata: Metadata = {
-  title: "Services | Alpine Demolition",
-  description:
-    "Alpine Demolition offers structural demolition, environmental remediation, asbestos abatement, tank removal, material recovery, and disaster response services across Colorado.",
+  title: 'Commercial Demolition Services in Colorado | Alpine Demolition',
+  description: 'Full-scope demolition services for commercial, industrial, and government clients across Colorado — structural demolition, asbestos abatement, tank removal, material recovery, and disaster response.',
+  alternates: { canonical: '/services' },
+  openGraph: { title: 'Commercial Demolition Services in Colorado | Alpine Demolition', description: 'Full-scope demolition services for commercial, industrial, and government clients across Colorado — structural demolition, asbestos abatement, tank removal, material recovery, and disaster response.' },
 };
 
 export default function ServicesPage() {

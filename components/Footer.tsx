@@ -4,11 +4,23 @@ import { Phone, MapPin } from "lucide-react";
 
 const navLinks = [
   { label: "Services", href: "/services" },
-  { label: "Projects", href: "/#featured-work" },
-  { label: "Safety", href: "/services#safety" },
-  { label: "About", href: "/services#about" },
+  { label: "Portfolio", href: "/portfolio" },
+  { label: "Safety", href: "/safety" },
+  { label: "About", href: "/company-profile" },
+  { label: "News", href: "/news" },
+  { label: "Jobs", href: "/job-openings" },
   { label: "Contact", href: "/contact" },
   { label: "Privacy Policy", href: "/privacy-policy" },
+];
+
+const cityLinks = [
+  { label: "Denver", href: "/demolition-contractor-denver" },
+  { label: "Aurora", href: "/demolition-contractor-aurora" },
+  { label: "Fort Collins", href: "/demolition-contractor-fort-collins" },
+  { label: "Longmont", href: "/demolition-contractor-longmont" },
+  { label: "Arvada", href: "/demolition-contractor-arvada" },
+  { label: "Lakewood", href: "/demolition-contractor-lakewood" },
+  { label: "Boulder", href: "/demolition-contractor-boulder" },
 ];
 
 export default function Footer() {
@@ -17,7 +29,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#17262B] text-white">
       <div className="max-w-[1260px] mx-auto px-4 sm:px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Logo + NAP */}
           <div className="flex flex-col gap-6">
             <Image
@@ -59,6 +71,20 @@ export default function Footer() {
                   href={link.href}
                   className="text-white/70 hover:text-white text-sm transition-colors duration-200"
                 >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+
+          {/* City pages */}
+          <div>
+            <h3 className="text-sm font-semibold uppercase tracking-wider text-[#76B852] mb-4">
+              Service Areas
+            </h3>
+            <nav className="flex flex-col gap-2">
+              {cityLinks.map((link) => (
+                <Link key={link.href} href={link.href} className="text-white/70 hover:text-white text-sm transition-colors duration-200">
                   {link.label}
                 </Link>
               ))}

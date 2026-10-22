@@ -5,9 +5,10 @@ import Footer from "@/components/Footer";
 import ApplicationForm from "@/components/ApplicationForm";
 
 export const metadata: Metadata = {
-  title: "Job Openings | Alpine Demolition",
-  description: "Alpine Demolition is hiring. View current job openings and apply for positions in commercial and industrial demolition in Colorado.",
-  alternates: { canonical: "/job-openings" },
+  title: 'Demolition Jobs in Colorado | Alpine Demolition Careers',
+  description: 'Alpine Demolition is hiring experienced demolition laborers in Colorado. Competitive pay, opportunities for advancement, and a safety-first team environment.',
+  alternates: { canonical: '/job-openings' },
+  openGraph: { title: 'Demolition Jobs in Colorado | Alpine Demolition Careers', description: 'Alpine Demolition is hiring experienced demolition laborers in Colorado. Competitive pay, opportunities for advancement, and a safety-first team environment.' },
 };
 
 const required = [

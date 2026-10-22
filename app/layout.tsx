@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], display: "swap" });
 export const metadata: Metadata = {
   title: {
     default: "Alpine Demolition | Commercial & Industrial Demolition in Colorado",
-    template: "%s | Alpine Demolition",
+    template: "%s",
   },
   description:
     "Alpine Demolition provides structural demolition, environmental remediation, tank removal, and material recovery services for commercial and industrial projects throughout Colorado.",

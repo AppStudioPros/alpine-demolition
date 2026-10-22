@@ -117,7 +117,10 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   name: "Alpine Demolition",
-  url: "https://www.alpinedemolition.com",
+  url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.alpinedemolition.com",
+  image: (process.env.NEXT_PUBLIC_SITE_URL || "https://alpine-demolition.vercel.app") + "/images/hero-main.jpg",
+  openingHoursSpecification: [{ "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday"], opens: "07:00", closes: "17:00" }],
+  sameAs: ["https://www.alpinedemolition.com"],
   telephone: "+13034213366",
   address: {
     "@type": "PostalAddress",

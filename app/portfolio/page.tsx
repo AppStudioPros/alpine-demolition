@@ -5,9 +5,10 @@ import Footer from "@/components/Footer";
 import PortfolioAccordion from "@/components/PortfolioAccordion";
 
 export const metadata: Metadata = {
-  title: "Project Portfolio | Alpine Demolition",
-  description: "Alpine Demolition's project portfolio — commercial, industrial, institutional, and government demolition projects throughout Colorado. Click any project to view details and photos.",
-  alternates: { canonical: "/portfolio" },
+  title: 'Colorado Demolition Project Portfolio | Alpine Demolition',
+  description: '20 documented commercial, industrial, institutional, and government demolition projects throughout Colorado — with real project descriptions, photos, and scope details.',
+  alternates: { canonical: '/portfolio' },
+  openGraph: { title: 'Colorado Demolition Project Portfolio | Alpine Demolition', description: '20 documented commercial, industrial, institutional, and government demolition projects throughout Colorado — with real project descriptions, photos, and scope details.' },
 };
 
 export default function Portfolio() {

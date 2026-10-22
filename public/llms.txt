@@ -1,0 +1,63 @@
+# Alpine Demolition
+
+> Commercial and industrial demolition contractor based in Arvada, Colorado. Full-scope structural demolition, environmental remediation, asbestos abatement, tank removal, material recovery, and disaster response for projects throughout Colorado.
+
+## Company
+
+- **Name:** Alpine Demolition
+- **Type:** Commercial and industrial demolition contractor
+- **Location:** 5790 W 56th Ave Suite C, Arvada, CO 80002
+- **Phone:** 303-421-3366
+- **Email:** jimmy@alpinedemolition.com
+- **Service Area:** Colorado statewide — Denver metro, Fort Collins, Longmont, Aurora, Arvada, Boulder, Lakewood, Windsor, and surrounding areas
+- **Years in Business:** Decades of documented Colorado project history
+
+## Services
+
+- Structural and mechanical demolition (commercial, industrial, government)
+- Environmental remediation and abatement (asbestos, lead, mold, soil)
+- Underground and above-ground storage tank (UST/AST) removal and purging
+- Material recovery, deconstruction, and recycling
+- Disaster and emergency site response (fire, wind, water damage)
+
+## Notable Projects
+
+- 990 Bannock (Denver Health Admin building, 100,000+ sq ft, 2019)
+- Kodak Buildings Windsor (1,000,000+ sq ft industrial complex, 2014)
+- Buckley Annex Lowry (3 government structures + asbestos abatement, 2014)
+- Denver University Aspen Hall (39,000 sq ft, 2018)
+- Sheraton Hotel Denver (12 acres, 615 rooms, 2010)
+- Buckingham Mall Aurora (900,000 sq ft, 2008)
+- Lory Apartments CSU Fort Collins (2012)
+- Gove Middle School Denver (2012)
+- Berthoud Bridge I-25 (infrastructure, 2012)
+- JC Penney's Foothills Mall Fort Collins (active site, 2011)
+
+## Safety
+
+Alpine Demolition's health and safety program exceeds OSHA standards. Every project includes a site-specific safety plan, mandatory daily toolbox meetings, a dedicated health and safety officer on site, and management presence throughout. All staff are trained and equipped per task.
+
+## Recycling Commitment
+
+Alpine incorporates material recovery into demolition projects where site conditions allow — recovering steel, concrete, and wood for reuse or recycling. Recovery rates are documented at the project level.
+
+## Pages
+
+- Homepage: /
+- Services: /services
+- Portfolio: /portfolio
+- Safety: /safety
+- About: /company-profile
+- Contact: /contact
+- News: /news
+- Job Openings: /job-openings
+
+## City Service Pages
+
+- Denver: /demolition-contractor-denver
+- Aurora: /demolition-contractor-aurora
+- Fort Collins: /demolition-contractor-fort-collins
+- Longmont: /demolition-contractor-longmont
+- Arvada: /demolition-contractor-arvada
+- Boulder: /demolition-contractor-boulder
+- Lakewood: /demolition-contractor-lakewood

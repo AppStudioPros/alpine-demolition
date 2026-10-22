@@ -4,9 +4,10 @@ import { Newspaper, ChevronRight } from "lucide-react";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Alpine In The News | Alpine Demolition",
-  description: "Alpine Demolition has been featured in 9 News Denver, the Denver Post, and the Longmont Times-Call for its safe, professional demolition work throughout Colorado.",
-  alternates: { canonical: "/news" },
+  title: 'Alpine Demolition in the News | Colorado Press Coverage',
+  description: 'Alpine Demolition has been featured in 9 News Denver, the Denver Post, and the Longmont Times-Call for safe, professional demolition work throughout Colorado.',
+  alternates: { canonical: '/news' },
+  openGraph: { title: 'Alpine Demolition in the News | Colorado Press Coverage', description: 'Alpine Demolition has been featured in 9 News Denver, the Denver Post, and the Longmont Times-Call for safe, professional demolition work throughout Colorado.' },
 };
 
 const articles = [

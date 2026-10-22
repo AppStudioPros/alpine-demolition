@@ -4,9 +4,10 @@ import { ShieldCheck, ClipboardList, HardHat, Users, ChevronRight } from "lucide
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Safety | Alpine Demolition",
-  description: "Safety is never compromised at Alpine Demolition. Every project includes site-specific safety planning, daily toolbox meetings, and a dedicated health and safety officer on site.",
-  alternates: { canonical: "/safety" },
+  title: 'Demolition Safety Program | Alpine Demolition Colorado',
+  description: 'Alpine Demolition’s site-specific safety program exceeds OSHA standards on every project. Daily toolbox meetings, dedicated safety officers, and integrated abatement planning.',
+  alternates: { canonical: '/safety' },
+  openGraph: { title: 'Demolition Safety Program | Alpine Demolition Colorado', description: 'Alpine Demolition’s site-specific safety program exceeds OSHA standards on every project. Daily toolbox meetings, dedicated safety officers, and integrated abatement planning.' },
 };
 
 const pillars = [

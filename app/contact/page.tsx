@@ -4,9 +4,10 @@ import LeadForm from "@/components/LeadForm";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Contact | Alpine Demolition",
-  description:
-    "Contact Alpine Demolition to discuss your commercial or industrial demolition project. Call 303-421-3366 or send a project inquiry. Located in Arvada, Colorado.",
+  title: 'Contact Alpine Demolition | Arvada, Colorado',
+  description: 'Contact Alpine Demolition to discuss your commercial or industrial demolition project in Colorado. Call 303-421-3366 or submit a project inquiry online.',
+  alternates: { canonical: '/contact' },
+  openGraph: { title: 'Contact Alpine Demolition | Arvada, Colorado', description: 'Contact Alpine Demolition to discuss your commercial or industrial demolition project in Colorado. Call 303-421-3366 or submit a project inquiry online.' },
 };
 
 export default function ContactPage() {
