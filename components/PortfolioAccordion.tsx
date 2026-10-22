@@ -196,9 +196,10 @@ export default function PortfolioAccordion() {
         const isOpen = open === p.title;
         return (
           <div key={p.title}>
-            {/* Collapsed row */}
+            {/* Collapsed row — hover preloads image before click */}
             <button
               onClick={() => setOpen(isOpen ? null : p.title)}
+              onMouseEnter={() => { const img = new window.Image(); img.src = p.image; }}
               className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-[#F4F2ED] transition-colors duration-150 group"
             >
               <div className="flex items-center gap-6 min-w-0">
@@ -237,7 +238,8 @@ export default function PortfolioAccordion() {
                       src={p.image}
                       alt={p.title}
                       fill
-                      className="object-cover" loading="eager" priority={false}
+                      unoptimized
+                      className="object-cover"
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                   </div>
