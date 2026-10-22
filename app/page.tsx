@@ -183,12 +183,17 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right: photo placeholder */}
+            {/* Right: hero image */}
             <div className="hidden md:flex items-center justify-center">
-              <div className="w-full aspect-[4/3] bg-white/10 rounded-lg border border-white/20 flex flex-col items-center justify-center text-white/40">
-                <Building2 size={56} className="mb-4" />
-                <span className="text-sm font-medium tracking-wide">Project Photography</span>
-                <span className="text-xs mt-1 opacity-60">Licensed photography coming soon</span>
+              <div className="w-full aspect-[4/3] rounded-lg overflow-hidden border border-white/10">
+                <Image
+                  src="/images/hero-main.jpg"
+                  alt="Alpine Demolition project site"
+                  width={700}
+                  height={525}
+                  className="w-full h-full object-cover"
+                  priority
+                />
               </div>
             </div>
           </div>
