@@ -19,7 +19,7 @@ const projects = [
     location: "Windsor, CO",
     year: "2014",
     scope: "Demolition, Recycling",
-    image: "/images/portfolio/kodak-buildings.png",
+    image: "/images/portfolio/kodak-buildings.jpg",
     desc: "Demolition of the former Kodak plant in Windsor — once one of Kodak's largest film production facilities including X-Ray machine production. The site encompassed over 1,000,000 sq ft of building scope with extensive material recovery and recycling.",
     tags: ["Industrial", "Recycling", "Large Scope"],
   },
@@ -163,7 +163,7 @@ const projects = [
     location: "Denver, CO",
     year: "—",
     scope: "Demolition",
-    image: "/images/portfolio/fire-structure-emerson.png",
+    image: "/images/portfolio/fire-structure-emerson.jpg",
     desc: "Demolition of a fire-damaged vacant construction site structure at 1833 Emerson Street in Denver — emergency demolition and site stabilization following a fire event.",
     tags: ["Disaster Response", "Emergency"],
   },
@@ -237,7 +237,7 @@ export default function PortfolioAccordion() {
                       src={p.image}
                       alt={p.title}
                       fill
-                      className="object-cover"
+                      className="object-cover" loading="eager" priority={false}
                       sizes="(max-width: 1024px) 100vw, 50vw"
                     />
                   </div>
