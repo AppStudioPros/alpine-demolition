@@ -236,29 +236,20 @@ export default function HomePage() {
               lifecycle for commercial and industrial clients.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((svc) => {
-              const Icon = svc.icon;
-              return (
-                <Link
-                  key={svc.title}
-                  href={svc.href}
-                  className="group bg-white border border-[#DEE3DC] rounded-lg p-8 hover:border-[#165B38] hover:shadow-md transition-all duration-200"
-                >
-                  <div className="w-12 h-12 rounded-lg bg-[#F4F2ED] flex items-center justify-center mb-5 group-hover:bg-[#165B38] transition-colors duration-200">
-                    <Icon
-                      size={24}
-                      className="text-[#165B38] group-hover:text-white transition-colors duration-200"
-                    />
-                  </div>
-                  <h3 className="text-base font-bold text-[#17262B] mb-3">{svc.title}</h3>
-                  <p className="text-gray-500 text-sm leading-relaxed">{svc.desc}</p>
-                  <div className="flex items-center gap-1 mt-5 text-[#165B38] text-sm font-semibold">
-                    Learn more <ChevronRight size={16} />
-                  </div>
-                </Link>
-              );
-            })}
+          <div className="flex flex-wrap justify-center gap-6">
+            {services.map((svc) => (
+              <Link
+                key={svc.title}
+                href={svc.href}
+                className="group bg-white border border-[#DEE3DC] rounded-lg p-8 hover:border-[#165B38] hover:shadow-md transition-all duration-200 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+              >
+                <h3 className="text-base font-bold text-[#17262B] mb-3">{svc.title}</h3>
+                <p className="text-gray-500 text-sm leading-relaxed">{svc.desc}</p>
+                <div className="flex items-center gap-1 mt-5 text-[#165B38] text-sm font-semibold">
+                  Learn more <ChevronRight size={16} />
+                </div>
+              </Link>
+            ))}
           </div>
           <div className="text-center mt-10">
             <Link
