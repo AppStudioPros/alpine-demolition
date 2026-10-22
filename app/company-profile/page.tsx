@@ -96,7 +96,7 @@ export default function CompanyProfile() {
               </p>
               <ul className="space-y-3">
                 {services.map((s) => (
-                  <li key={s} className="flex items-start gap-3 text-gray-700 text-sm">
+                  <li key={s} className="flex items-center justify-center gap-3 text-gray-700 text-sm text-center">
                     <CheckCircle size={16} className="text-[#165B38] mt-0.5 shrink-0" />
                     <span>{s}</span>
                   </li>

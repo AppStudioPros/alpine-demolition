@@ -14,7 +14,7 @@ export default function ContactPage() {
     <>
       {/* Hero */}
       <section className="bg-[#17262B] text-white py-20 md:py-24">
-        <div className="max-w-[1260px] mx-auto px-4 sm:px-6">
+        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#76B852] text-xs font-bold uppercase tracking-widest mb-4">
             Get in Touch
           </p>

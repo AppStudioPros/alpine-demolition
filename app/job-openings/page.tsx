@@ -44,7 +44,7 @@ export default function JobOpenings() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] mb-6">
             Join the Team.
           </h1>
-          <p className="text-white/70 text-lg max-w-2xl leading-relaxed">
+          <p className="text-white/70 text-lg max-w-2xl leading-relaxed mx-auto">
             Alpine Demolition offers competitive pay and opportunities for advancement for
             experienced demolition professionals throughout Colorado.
           </p>

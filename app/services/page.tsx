@@ -37,7 +37,7 @@ export default function ServicesPage() {
       <section className="bg-[#17262B] text-white py-20">
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="text-center">
               <p className="text-[#76B852] text-xs font-bold uppercase tracking-widest mb-4">
                 Safety
               </p>
@@ -49,7 +49,7 @@ export default function ServicesPage() {
                 Safety planning is integrated with abatement and demolition sequencing — not added
                 as an afterthought.
               </p>
-              <Link href="/safety" className="inline-flex items-center gap-2 text-[#76B852] font-semibold text-sm hover:text-white transition-colors">
+              <Link href="/safety" className="inline-flex items-center justify-center gap-2 text-[#76B852] font-semibold text-sm hover:text-white transition-colors mx-auto">
                 Read about Alpine's safety program <ChevronRight size={16} />
               </Link>
             </div>
@@ -62,7 +62,7 @@ export default function ServicesPage() {
                 "Integrated abatement sequencing",
                 "Qualified staff oversight",
               ].map((item) => (
-                <div key={item} className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-lg p-4">
+                <div key={item} className="flex items-center justify-center gap-3 bg-white/5 border border-white/10 rounded-lg p-4 text-center">
                   <ShieldCheck size={18} className="text-[#76B852] shrink-0" />
                   <span className="text-sm text-white/80">{item}</span>
                 </div>
