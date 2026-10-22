@@ -37,7 +37,7 @@ export default function Safety() {
     <>
       {/* Hero */}
       <section className="bg-[#17262B] text-white min-h-[320px] flex items-center">
-        <div className="max-w-[1260px] mx-auto px-4 sm:px-6">
+        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 text-center">
           <p className="text-[#76B852] text-xs font-bold tracking-[0.2em] uppercase mb-5">
             Safety Program
           </p>

@@ -135,7 +135,7 @@ export default function ServicesTabs() {
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <div className="flex items-center gap-4 mb-6">
+              <div className="flex flex-col items-center gap-3 mb-6 text-center">
                 <div className="w-14 h-14 rounded-lg bg-[#165B38] flex items-center justify-center shrink-0">
                   <Icon size={28} className="text-white" />
                 </div>
@@ -144,7 +144,7 @@ export default function ServicesTabs() {
                   <p className="text-[#165B38] font-medium text-sm mt-1">{svc.tagline}</p>
                 </div>
               </div>
-              <div className="space-y-4">
+              <div className="space-y-4 text-center">
                 {svc.body.map((para, i) => (
                   <p key={i} className="text-gray-600 text-base leading-relaxed">{para}</p>
                 ))}
@@ -152,16 +152,16 @@ export default function ServicesTabs() {
             </div>
             <div>
               <div className="bg-[#F4F2ED] border border-[#DEE3DC] rounded-xl p-8">
-                <h3 className="font-bold text-[#17262B] mb-5">Capabilities Include</h3>
+                <h3 className="font-bold text-[#17262B] mb-5 text-center">Capabilities Include</h3>
                 <ul className="space-y-3">
                   {svc.bullets.map((bullet) => (
-                    <li key={bullet} className="flex items-start gap-3 text-sm text-gray-600">
+                    <li key={bullet} className="flex items-center gap-3 text-sm text-gray-600 justify-center">
                       <ShieldCheck size={18} className="text-[#165B38] mt-0.5 shrink-0" />
                       {bullet}
                     </li>
                   ))}
                 </ul>
-                <div className="mt-8 pt-6 border-t border-[#DEE3DC] flex flex-wrap gap-3">
+                <div className="mt-8 pt-6 border-t border-[#DEE3DC] flex flex-wrap gap-3 justify-center">
                   <Link
                     href="/contact"
                     className="inline-flex items-center gap-2 bg-[#165B38] hover:bg-[#1a7044] text-white font-semibold px-6 py-3 rounded text-sm transition-colors duration-200"

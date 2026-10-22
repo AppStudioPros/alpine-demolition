@@ -155,7 +155,7 @@ export default function HomePage() {
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6 w-full py-20 md:py-28">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left: copy */}
-            <div>
+            <div className="text-center md:text-left">
               <p className="text-[#76B852] text-xs font-bold tracking-[0.2em] uppercase mb-5">
                 Commercial / Industrial / Environmental
               </p>
@@ -168,7 +168,7 @@ export default function HomePage() {
                 Structural demolition, environmental remediation, and material recovery for projects
                 throughout Colorado.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
                 <a
                   href="#callback-form"
                   className="inline-flex items-center justify-center gap-2 bg-[#165B38] hover:bg-[#1a7044] text-white font-semibold px-8 py-4 rounded text-base transition-colors duration-200"
@@ -210,7 +210,7 @@ export default function HomePage() {
             {proofTiles.map((tile) => (
               <div
                 key={tile.project}
-                className="bg-white rounded-lg border border-[#DEE3DC] p-8"
+                className="bg-white rounded-lg border border-[#DEE3DC] p-8 text-center"
               >
                 <p className="text-[#165B38] text-xs font-bold uppercase tracking-widest mb-2">
                   {tile.label}
@@ -244,11 +244,11 @@ export default function HomePage() {
               <Link
                 key={svc.title}
                 href={svc.href}
-                className="group bg-white border border-[#DEE3DC] rounded-lg p-8 hover:border-[#165B38] hover:shadow-md transition-all duration-200 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)]"
+                className="group bg-white border border-[#DEE3DC] rounded-lg p-8 hover:border-[#165B38] hover:shadow-md transition-all duration-200 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] text-center"
               >
                 <h3 className="text-base font-bold text-[#17262B] mb-3">{svc.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{svc.desc}</p>
-                <div className="flex items-center gap-1 mt-5 text-[#165B38] text-sm font-semibold">
+                <div className="flex items-center justify-center gap-1 mt-5 text-[#165B38] text-sm font-semibold">
                   Learn more <ChevronRight size={16} />
                 </div>
               </Link>
@@ -293,9 +293,9 @@ export default function HomePage() {
                     </p>
                   </div>
                 </div>
-                <div className="p-6">
+                <div className="p-6 text-center">
                   <p className="text-gray-600 text-sm leading-relaxed">{project.desc}</p>
-                  <div className="flex flex-wrap gap-2 mt-4">
+                  <div className="flex flex-wrap gap-2 mt-4 justify-center">
                     {project.tags.map((tag) => (
                       <span
                         key={tag}

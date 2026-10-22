@@ -252,7 +252,7 @@ export default function PortfolioAccordion() {
                       <span className="flex items-center gap-1"><Layers size={13}/> {p.scope}</span>
                     </div>
                     <p className="text-gray-600 text-sm leading-relaxed mb-5">{p.desc}</p>
-                    <div className="flex flex-wrap gap-2">
+                    <div className="flex flex-wrap gap-2 justify-center">
                       {p.tags.map((t) => (
                         <span key={t} className="text-xs font-semibold bg-white text-[#165B38] border border-[#DEE3DC] px-3 py-1 rounded-full">
                           {t}

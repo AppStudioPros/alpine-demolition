@@ -37,7 +37,7 @@ export default function JobOpenings() {
     <>
       {/* Hero */}
       <section className="bg-[#17262B] text-white min-h-[320px] flex items-center">
-        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 w-full">
+        <div className="max-w-[1260px] mx-auto px-4 sm:px-6 w-full text-center">
           <p className="text-[#76B852] text-xs font-bold tracking-[0.2em] uppercase mb-5">
             Careers
           </p>
