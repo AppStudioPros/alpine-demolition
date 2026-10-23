@@ -133,7 +133,7 @@ export default function ServicesTabs() {
       {/* Active service panel */}
       <section className="bg-white py-20">
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="flex flex-col items-center gap-3 mb-6 text-center">
                 <div className="w-14 h-14 rounded-lg bg-[#165B38] flex items-center justify-center shrink-0">
