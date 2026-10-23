@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, MapPin } from "lucide-react";
+import MadeByWDP365 from "@/components/MadeByWDP365";
 
 const navLinks = [
   { label: "Services", href: "/services" },
@@ -107,6 +108,13 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10 text-center text-white/50 text-sm">
+          <div className="flex justify-center mb-6">
+            <MadeByWDP365
+              theme="dark"
+              projectCode="alpine-demolition"
+              size="compact"
+            />
+          </div>
           <p>© {year} Alpine Demolition. All rights reserved.</p>
         </div>
       </div>
