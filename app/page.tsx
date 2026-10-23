@@ -229,17 +229,21 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right: hero image */}
+            {/* Right: hero video */}
             <div className="hidden md:flex items-center justify-center">
               <div className="w-full aspect-[4/3] rounded-lg overflow-hidden border border-white/10">
-                <Image
-                  src="/images/hero-main.jpg"
-                  alt="Alpine Demolition project site"
-                  width={700}
-                  height={525}
-                  className="w-full h-full object-cover"
-                  priority
-                />
+                <video
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="metadata"
+                  poster="/media/Alpine_Hero_Poster_4x3.jpg"
+                  className="h-full w-full object-cover"
+                  aria-label="Alpine Demolition project footage montage"
+                >
+                  <source src="/media/Alpine_Demolition_Hero_Web_4x3.mp4" type="video/mp4" />
+                </video>
               </div>
             </div>
           </div>
