@@ -184,7 +184,7 @@ export async function POST(request: NextRequest) {
 
       await resend.emails.send({
         from: "Alpine Demolition <noreply@mail.alpinedemolition.com>",
-        to: "webdesign@alpinedemolition.com",
+        to: "jimmy@alpinedemolition.com",
         subject,
         html: htmlBody,
         replyTo: email,
