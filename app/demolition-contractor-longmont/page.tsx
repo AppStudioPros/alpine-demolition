@@ -62,7 +62,7 @@ export default function CityPage() {
 
       <section className="bg-white py-20">
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
               <p className="text-[#165B38] text-xs font-bold uppercase tracking-widest mb-4">About This Area</p>
               <h2 className="text-3xl font-extrabold text-[#17262B] mb-6">Longmont — Boulder County's Second City</h2>
@@ -93,7 +93,7 @@ export default function CityPage() {
               <div className="bg-[#F4F2ED] rounded-xl border border-[#DEE3DC] p-6">
                 <p className="font-bold text-[#17262B] mb-1">Ready to discuss a project in Longmont?</p>
                 <p className="text-gray-500 text-sm mb-4">Contact Alpine to review your site, scope, and timeline.</p>
-                <div className="flex flex-col sm:flex-row gap-3">
+                <div className="flex flex-col xs:flex-row gap-3 flex-wrap">
                   <Link href="/contact" className="inline-flex items-center justify-center gap-2 bg-[#165B38] hover:bg-[#1a7044] text-white font-semibold px-5 py-3 rounded text-sm transition-colors">
                     Submit Project Details <ChevronRight size={16} />
                   </Link>

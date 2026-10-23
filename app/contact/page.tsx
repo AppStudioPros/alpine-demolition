@@ -32,7 +32,7 @@ export default function ContactPage() {
       {/* Contact info + form */}
       <section className="bg-[#F4F2ED]">
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6 py-20">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12">
             {/* Left: contact info */}
             <div className="lg:col-span-1">
               <h2 className="text-xl font-bold text-[#17262B] mb-6">Contact Information</h2>

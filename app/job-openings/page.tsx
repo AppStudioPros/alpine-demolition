@@ -84,7 +84,7 @@ export default function JobOpenings() {
               </a>
             </div>
 
-            <div className="p-8 grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="p-6 sm:p-8 grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Summary + Responsibilities */}
               <div>
                 <div className="mb-8">

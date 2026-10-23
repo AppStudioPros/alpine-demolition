@@ -209,7 +209,7 @@ export default function HomePage() {
       {/* 02 PROOF RAIL */}
       <section className="bg-[#F4F2ED] border-b border-[#DEE3DC]">
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6 py-14">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {proofTiles.map((tile) => (
               <div
                 key={tile.project}
@@ -242,12 +242,12 @@ export default function HomePage() {
               lifecycle for commercial and industrial clients.
             </p>
           </div>
-          <div className="flex flex-wrap justify-center gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((svc) => (
               <Link
                 key={svc.title}
                 href={svc.href}
-                className="group bg-white border border-[#DEE3DC] rounded-lg p-8 hover:border-[#165B38] hover:shadow-md transition-all duration-200 w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] text-center"
+                className="group bg-white border border-[#DEE3DC] rounded-lg p-8 hover:border-[#165B38] hover:shadow-md transition-all duration-200 text-center"
               >
                 <h3 className="text-base font-bold text-[#17262B] mb-3">{svc.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{svc.desc}</p>
@@ -327,7 +327,7 @@ export default function HomePage() {
               A structured, safety-first approach from first contact through final handover.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
             {processSteps.map((step, i) => (
               <div key={step.n} className="relative flex flex-col items-center text-center">
                 <div className="w-14 h-14 rounded-full bg-[#165B38] text-white flex items-center justify-center text-lg font-extrabold mb-4 shrink-0">
@@ -353,7 +353,7 @@ export default function HomePage() {
               Choose the path that works for you.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Link
               href="/contact?tab=book"
               className="group flex flex-col items-center text-center bg-white/5 hover:bg-white/10 border border-white/20 rounded-lg p-8 transition-all duration-200"
