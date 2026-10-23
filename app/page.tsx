@@ -59,22 +59,32 @@ const services = [
 
 const proofTiles = [
   {
+    label: "BBB Accredited",
+    project: "A+ Rating",
+    detail: "BBB Accredited Business with an A+ rating. Accredited since 2025.",
+    location: "Better Business Bureau",
+    href: "https://www.bbb.org/us/co/arvada/profile/demolition-contractors/alpine-demolition-inc-1296-1000106424",
+  },
+  {
     label: "Historic Scope",
     project: "Kodak Buildings",
     detail: "1M+ sq ft historic demolition scope, completed 2014",
     location: "Windsor, Colorado",
+    href: null,
   },
   {
     label: "Urban Demolition",
     project: "990 Bannock",
     detail: "100,000+ sq ft five-story structure, completed 2019",
     location: "Denver, Colorado",
+    href: null,
   },
   {
     label: "Safety-First Planning",
     project: "Every Project",
     detail: "Site-specific safety and abatement planning on every project",
     location: "Colorado & Region",
+    href: null,
   },
 ];
 
@@ -198,6 +208,25 @@ export default function HomePage() {
                   Call Alpine
                 </a>
               </div>
+
+              {/* BBB trust strip */}
+              <div className="mt-8 flex justify-center">
+                <a
+                  href="https://www.bbb.org/us/co/arvada/profile/demolition-contractors/alpine-demolition-inc-1296-1000106424"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 bg-white/10 hover:bg-white/15 border border-white/20 rounded-lg px-5 py-3 transition-colors duration-200 group"
+                >
+                  <div className="flex flex-col items-center justify-center w-10 h-10 rounded bg-[#0057a8] shrink-0">
+                    <span className="text-white font-black text-[10px] leading-none tracking-tight">BBB</span>
+                    <span className="text-white/80 text-[7px] leading-none mt-0.5">ACCREDITED</span>
+                  </div>
+                  <div className="text-left">
+                    <p className="text-white text-sm font-semibold leading-tight">BBB Accredited Business</p>
+                    <p className="text-[#76B852] text-xs font-bold leading-tight">A+ Rating · Since 2025</p>
+                  </div>
+                </a>
+              </div>
             </div>
 
             {/* Right: hero image */}
@@ -220,20 +249,39 @@ export default function HomePage() {
       {/* 02 PROOF RAIL */}
       <section className="bg-[#F4F2ED] border-b border-[#DEE3DC]">
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6 py-14">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {proofTiles.map((tile) => (
-              <div
-                key={tile.project}
-                data-animate="fade-up" className="bg-white rounded-lg border border-[#DEE3DC] p-8 text-center card-lift"
-              >
-                <p className="text-[#165B38] text-xs font-bold uppercase tracking-widest mb-2">
-                  {tile.label}
-                </p>
-                <h3 className="text-lg font-bold text-[#17262B] mb-2">{tile.project}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{tile.detail}</p>
-                <p className="text-gray-400 text-xs mt-3">{tile.location}</p>
-              </div>
-            ))}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {proofTiles.map((tile) => {
+              const inner = (
+                <>
+                  <p className="text-[#165B38] text-xs font-bold uppercase tracking-widest mb-2">
+                    {tile.label}
+                  </p>
+                  <h3 className="text-lg font-bold text-[#17262B] mb-2">{tile.project}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{tile.detail}</p>
+                  <p className="text-gray-400 text-xs mt-3">{tile.location}</p>
+                </>
+              );
+              return tile.href ? (
+                <a
+                  key={tile.project}
+                  href={tile.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-animate="fade-up"
+                  className="bg-white rounded-lg border border-[#DEE3DC] p-8 text-center card-lift hover:border-[#165B38] transition-colors duration-200 block"
+                >
+                  {inner}
+                </a>
+              ) : (
+                <div
+                  key={tile.project}
+                  data-animate="fade-up"
+                  className="bg-white rounded-lg border border-[#DEE3DC] p-8 text-center card-lift"
+                >
+                  {inner}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
