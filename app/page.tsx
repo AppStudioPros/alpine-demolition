@@ -154,7 +154,7 @@ export default function HomePage() {
       />
 
       {/* 01 HERO */}
-      <section className="bg-[#17262B] text-white min-h-[560px] flex items-center">
+      <section className="hero-gradient-pulse text-white min-h-[560px] flex items-center">
         <div className="max-w-[1260px] mx-auto px-4 sm:px-6 w-full py-20 md:py-28">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left: copy */}
@@ -213,7 +213,7 @@ export default function HomePage() {
             {proofTiles.map((tile) => (
               <div
                 key={tile.project}
-                className="bg-white rounded-lg border border-[#DEE3DC] p-8 text-center"
+                data-animate="fade-up" className="bg-white rounded-lg border border-[#DEE3DC] p-8 text-center card-lift"
               >
                 <p className="text-[#165B38] text-xs font-bold uppercase tracking-widest mb-2">
                   {tile.label}
@@ -247,7 +247,7 @@ export default function HomePage() {
               <Link
                 key={svc.title}
                 href={svc.href}
-                className="group bg-white border border-[#DEE3DC] rounded-lg p-8 hover:border-[#165B38] hover:shadow-md transition-all duration-200 text-center"
+                data-animate="fade-up" className="group bg-white border border-[#DEE3DC] rounded-lg p-8 hover:border-[#165B38] hover:shadow-md transition-all duration-200 text-center card-lift"
               >
                 <h3 className="text-base font-bold text-[#17262B] mb-3">{svc.title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{svc.desc}</p>
@@ -329,7 +329,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6">
             {processSteps.map((step, i) => (
-              <div key={step.n} className="relative flex flex-col items-center text-center">
+              <div key={step.n} data-animate="fade-up" className="relative flex flex-col items-center text-center">
                 <div className="w-14 h-14 rounded-full bg-[#165B38] text-white flex items-center justify-center text-lg font-extrabold mb-4 shrink-0">
                   {step.n}
                 </div>

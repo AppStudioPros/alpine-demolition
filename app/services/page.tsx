@@ -3,6 +3,7 @@ import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import { ShieldCheck } from "lucide-react";
 import Footer from "@/components/Footer";
+import Animate from "@/components/Animate";
 import ServicesTabs from "@/components/ServicesTabs";
 
 export const metadata: Metadata = {

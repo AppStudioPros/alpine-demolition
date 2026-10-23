@@ -151,7 +151,7 @@ export default function ServicesTabs() {
               </div>
             </div>
             <div>
-              <div className="bg-[#F4F2ED] border border-[#DEE3DC] rounded-xl p-8">
+              <div className="bg-[#F4F2ED] border border-[#DEE3DC] rounded-xl p-8 card-lift">
                 <h3 className="font-bold text-[#17262B] mb-5 text-center">Capabilities Include</h3>
                 <ul className="space-y-3">
                   {svc.bullets.map((bullet) => (

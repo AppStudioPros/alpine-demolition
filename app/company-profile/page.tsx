@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CheckCircle, Recycle, Users, ShieldCheck, ChevronRight } from "lucide-react";
 import Footer from "@/components/Footer";
+import Animate from "@/components/Animate";
 
 export const metadata: Metadata = {
   title: 'About Alpine Demolition | Colorado Demolition Contractor',
@@ -123,7 +124,7 @@ export default function CompanyProfile() {
             {commitments.map((c) => {
               const Icon = c.icon;
               return (
-                <div key={c.title} className="bg-white rounded-lg border border-[#DEE3DC] p-8 text-center flex flex-col items-center">
+                <div key={c.title} data-animate="fade-up" className="bg-white rounded-lg border border-[#DEE3DC] p-8 text-center flex flex-col items-center card-lift">
                   <div className="w-12 h-12 rounded-lg bg-[#17262B] flex items-center justify-center mb-5">
                     <Icon size={22} className="text-[#76B852]" />
                   </div>

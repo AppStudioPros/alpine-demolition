@@ -200,7 +200,7 @@ export default function PortfolioAccordion() {
             <button
               onClick={() => setOpen(isOpen ? null : p.title)}
               onMouseEnter={() => { const img = new window.Image(); img.src = p.image; }}
-              className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-[#F4F2ED] transition-colors duration-150 group"
+              className="w-full flex items-center justify-between gap-4 px-6 py-5 text-left hover:bg-[#F4F2ED] transition-all duration-200 group"
             >
               <div className="flex items-center gap-4 min-w-0 overflow-hidden">
                 <span className="text-[#165B38] font-bold text-sm sm:text-base leading-tight group-hover:text-[#17262B] transition-colors truncate min-w-0">

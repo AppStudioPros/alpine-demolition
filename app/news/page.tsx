@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { Newspaper, ChevronRight } from "lucide-react";
 import Footer from "@/components/Footer";
+import Animate from "@/components/Animate";
 
 export const metadata: Metadata = {
   title: 'Alpine Demolition in the News | Colorado Press Coverage',
@@ -50,7 +51,7 @@ export default function News() {
           <div className="flex flex-col gap-6 max-w-3xl mx-auto">
             {articles.map((a) => (
               <Link key={a.slug} href={`/news/${a.slug}`}
-                className="bg-white border border-[#DEE3DC] rounded-xl p-8 hover:border-[#165B38] hover:shadow-md transition-all duration-200 group">
+                data-animate="fade-up" className="bg-white border border-[#DEE3DC] rounded-xl p-8 hover:border-[#165B38] transition-all duration-200 group card-lift">
                 <div className="flex items-center gap-3 mb-4">
                   <div className="w-10 h-10 rounded-lg bg-[#17262B] flex items-center justify-center shrink-0">
                     <Newspaper size={18} className="text-[#76B852]" />

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ChevronRight } from "lucide-react";
 import Footer from "@/components/Footer";
+import Animate from "@/components/Animate";
 import PortfolioAccordion from "@/components/PortfolioAccordion";
 
 export const metadata: Metadata = {

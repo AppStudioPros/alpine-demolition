@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import ChatWidget from "@/components/ChatWidget";
 import AccessibilityWidget from "@/components/AccessibilityWidget";
+import ScrollAnimator from "@/components/ScrollAnimator";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -36,6 +37,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Analytics />
+        <ScrollAnimator />
         <AccessibilityWidget />
         <ChatWidget />
       </body>
