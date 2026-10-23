@@ -24,7 +24,7 @@ export async function POST(req: NextRequest) {
 
     await resend.emails.send({
       from: "Alpine Demolition Jobs <noreply@mail.alpinedemolition.com>",
-      to: ["jimmy@alpinedemolition.com"],
+      to: ["webdesign@alpinedemolition.com"],
       replyTo: email,
       subject: `Job Application — Demolition Laborer — ${full_name}`,
       html: `
