@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react'
 import { X, Send, ChevronDown, Phone } from 'lucide-react'
+import ReactMarkdown from 'react-markdown'
 
 type Node = { x: number; y: number; vx: number; vy: number; baseR: number; pulsePhase: number }
 
@@ -249,7 +250,15 @@ export default function ChatWidget() {
                     : { backgroundColor: '#fff', color: '#333', border: '1px solid #DEE3DC', borderBottomLeftRadius: '4px' }
                   }
                 >
-                  {m.content}
+                  {m.role === 'user' ? m.content : (
+                    <ReactMarkdown components={{
+                      p: ({ children }) => <p className="mb-1.5 last:mb-0">{children}</p>,
+                      strong: ({ children }) => <strong className="font-semibold" style={{ color: '#165B38' }}>{children}</strong>,
+                      ul: ({ children }) => <ul className="mt-1 mb-1.5 space-y-1 pl-1">{children}</ul>,
+                      li: ({ children }) => <li className="flex gap-2"><span style={{ color: '#76B852' }}>•</span><span>{children}</span></li>,
+                      a: ({ children, href }) => <a href={href} className="underline" style={{ color: '#165B38' }}>{children}</a>,
+                    }}>{m.content}</ReactMarkdown>
+                  )}
                 </div>
                 {m.role === 'assistant' && i === messages.length - 1 && m.content && (
                   <a href="/contact" className="mt-2 text-xs font-semibold px-3 py-1.5 rounded-lg transition-opacity hover:opacity-90" style={{ backgroundColor: '#165B38', color: '#fff' }}>
