@@ -153,14 +153,16 @@ export default function ServicesTabs() {
             <div>
               <div className="bg-[#F4F2ED] border border-[#DEE3DC] rounded-xl p-8 card-lift">
                 <h3 className="font-bold text-[#17262B] mb-5 text-center">Capabilities Include</h3>
-                <ul className="space-y-3">
-                  {svc.bullets.map((bullet) => (
-                    <li key={bullet} className="flex items-center gap-3 text-sm text-gray-600 justify-center">
-                      <ShieldCheck size={18} className="text-[#165B38] mt-0.5 shrink-0" />
-                      {bullet}
-                    </li>
-                  ))}
-                </ul>
+                <div className="flex justify-center">
+                  <ul className="space-y-3 inline-block text-left">
+                    {svc.bullets.map((bullet) => (
+                      <li key={bullet} className="flex items-center gap-3 text-sm text-gray-600">
+                        <ShieldCheck size={18} className="text-[#165B38] mt-0.5 shrink-0" />
+                        {bullet}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
                 <div className="mt-8 pt-6 border-t border-[#DEE3DC] flex flex-wrap gap-3 justify-center">
                   <Link
                     href="/contact"
