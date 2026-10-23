@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 import Header from "@/components/Header";
+import ChatWidget from "@/components/ChatWidget";
+import AccessibilityWidget from "@/components/AccessibilityWidget";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -34,6 +36,8 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Analytics />
+        <AccessibilityWidget />
+        <ChatWidget />
       </body>
     </html>
   );
