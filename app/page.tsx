@@ -159,6 +159,17 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             {/* Left: copy */}
             <div className="text-center">
+              {/* Hero logo */}
+              <div className="flex justify-center mb-6">
+                <Image
+                  src="/alpine-logo-dark-background.svg"
+                  alt="Alpine Demolition"
+                  width={240}
+                  height={80}
+                  className="h-auto"
+                  priority
+                />
+              </div>
               <p className="text-[#76B852] text-xs font-bold tracking-[0.2em] uppercase mb-5">
                 Commercial / Industrial / Environmental
               </p>
