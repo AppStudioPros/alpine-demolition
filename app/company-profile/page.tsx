@@ -96,14 +96,16 @@ export default function CompanyProfile() {
               <p className="text-[#165B38] text-xs font-bold uppercase tracking-widest mb-4 text-center">
                 Services Provided
               </p>
-              <ul className="space-y-3">
-                {services.map((s) => (
-                  <li key={s} className="flex items-center justify-center gap-3 text-gray-700 text-sm text-center">
-                    <CheckCircle size={16} className="text-[#165B38] mt-0.5 shrink-0" />
-                    <span>{s}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="flex justify-center">
+                <ul className="space-y-3 inline-block text-left">
+                  {services.map((s) => (
+                    <li key={s} className="flex items-center gap-3 text-gray-700 text-sm">
+                      <CheckCircle size={16} className="text-[#165B38] mt-0.5 shrink-0" />
+                      <span>{s}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>

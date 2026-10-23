@@ -64,7 +64,7 @@ export default function ServicesPage() {
                 "Integrated abatement sequencing",
                 "Qualified staff oversight",
               ].map((item) => (
-                <div key={item} className="flex items-center justify-center gap-3 bg-white/5 border border-white/10 rounded-lg p-4 text-center">
+                <div key={item} className="flex items-center gap-3 bg-white/5 border border-white/10 rounded-lg p-4">
                   <ShieldCheck size={18} className="text-[#76B852] shrink-0" />
                   <span className="text-sm text-white/80">{item}</span>
                 </div>

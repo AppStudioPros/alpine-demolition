@@ -91,24 +91,26 @@ export default function Safety() {
               <p className="text-[#165B38] text-xs font-bold uppercase tracking-widest mb-6">
                 What This Means on a Project
               </p>
-              <ul className="space-y-4">
-                {[
-                  "Site-specific safety plan developed before mobilization",
-                  "Mandatory daily toolbox meetings for all crew members",
-                  "Dedicated health and safety officer on every project site",
-                  "Management presence throughout the project",
-                  "Personal protective equipment appropriate to every task",
-                  "Equipment and vehicle fleet maintained to operating standards",
-                  "Double-check of equipment, personnel, materials, and site conditions",
-                  "All OSHA requirements met — often exceeded",
-                  "Ongoing staff training in current regulations and procedures",
-                ].map((item) => (
-                  <li key={item} className="flex items-start gap-3 text-gray-700 text-sm text-left">
-                    <ShieldCheck size={16} className="text-[#165B38] mt-0.5 shrink-0" />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="flex justify-center">
+                <ul className="space-y-4 inline-block text-left">
+                  {[
+                    "Site-specific safety plan developed before mobilization",
+                    "Mandatory daily toolbox meetings for all crew members",
+                    "Dedicated health and safety officer on every project site",
+                    "Management presence throughout the project",
+                    "Personal protective equipment appropriate to every task",
+                    "Equipment and vehicle fleet maintained to operating standards",
+                    "Double-check of equipment, personnel, materials, and site conditions",
+                    "All OSHA requirements met — often exceeded",
+                    "Ongoing staff training in current regulations and procedures",
+                  ].map((item) => (
+                    <li key={item} className="flex items-start gap-3 text-gray-700 text-sm">
+                      <ShieldCheck size={16} className="text-[#165B38] mt-0.5 shrink-0" />
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
