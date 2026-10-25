@@ -228,7 +228,7 @@ export default function HomePage() {
             </div>
 
             {/* Right: hero video */}
-            <div className="hidden md:flex items-center justify-center">
+            <div className="flex items-center justify-center">
               <div className="w-full aspect-[4/3] rounded-lg overflow-hidden border border-white/10">
                 <video
                   autoPlay
