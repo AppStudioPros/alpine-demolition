@@ -55,6 +55,11 @@ const services = [
     desc: "Project support following fire, wind, water, and related events — subject to assessment and staff availability.",
     href: "/services#disaster-response",
   },
+  {
+    title: "Site Clearing & Preparation",
+    desc: "Land clearing, debris removal, and site preparation services to ready your property for new construction or redevelopment.",
+    href: "/services#site-clearing",
+  },
 ];
 
 const proofTiles = [
