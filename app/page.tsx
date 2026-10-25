@@ -215,7 +215,7 @@ export default function HomePage() {
                   href="https://www.bbb.org/us/co/arvada/profile/demolition-contractors/alpine-demolition-inc-1296-1000106424"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block opacity-90 hover:opacity-100 transition-opacity duration-200"
+                  className="inline-block"
                 >
                   <img src="/images/bbb-badge.png" alt="BBB Accredited Business A+ Rating" width={242} height={97} style={{objectFit:'contain'}}/>
                 </a>
