@@ -343,9 +343,10 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {featuredWork.map((project) => (
-              <div
+              <Link
                 key={project.title}
-                className="bg-white rounded-lg border border-[#DEE3DC] overflow-hidden"
+                href="/portfolio"
+                className="bg-white rounded-lg border border-[#DEE3DC] overflow-hidden block hover:border-[#165B38] hover:shadow-md transition-all duration-200 cursor-pointer"
               >
                 {/* Project photo */}
                 <div className="relative aspect-[16/9] bg-[#17262B] overflow-hidden">
@@ -370,7 +371,7 @@ export default function HomePage() {
                     ))}
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
