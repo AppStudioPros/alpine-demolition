@@ -217,7 +217,7 @@ export default function HomePage() {
                   rel="noopener noreferrer"
                   className="inline-block opacity-90 hover:opacity-100 transition-opacity duration-200"
                 >
-                  <img src="/images/bbb-badge.png" alt="BBB Accredited Business A+ Rating" width={220} height={88} style={{objectFit:'contain'}}/>
+                  <img src="/images/bbb-badge.png" alt="BBB Accredited Business A+ Rating" width={242} height={97} style={{objectFit:'contain'}}/>
                 </a>
               </div>
             </div>
