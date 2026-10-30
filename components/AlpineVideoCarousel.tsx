@@ -4,40 +4,67 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const videos = [
   {
-    type: "youtube" as const,
-    src: "https://www.youtube.com/embed/PJcIkoSwm6c",
-    title: "Demolition Crew Removes Burnt Denver Construction Site — 9News",
-    caption: "9News coverage: Alpine clears a burnt residential and commercial building in Denver, CO.",
-  },
-  {
     type: "drive" as const,
     src: "https://drive.google.com/file/d/1EJhRrGdZLBMt-xkfYSQ-x5cvYc3uv53T/preview",
-    title: "Alpine Demolition Project Footage",
-    caption: "On-site project footage from Alpine Demolition's Denver fire response work.",
+    poster: "/images/worlds-greatest-thumbnail.png",
+    title: "Alpine Demolition — Featured on World's Greatest TV Show",
+    eyebrow: "FEATURED ON WORLD'S GREATEST TV SHOW",
+    heading: "Alpine on World's Greatest",
+    description: "Alpine Demolition was selected and featured on World's Greatest TV Show — recognizing Colorado's top demolition company for excellence, safety, and decades of service.",
+    caption: "World's Greatest TV Show feature — Alpine Demolition, Colorado.",
+  },
+  {
+    type: "youtube" as const,
+    src: "https://www.youtube.com/embed/PJcIkoSwm6c",
+    poster: undefined,
+    title: "Demolition Crew Removes Burnt Denver Construction Site — 9News",
+    eyebrow: "AS SEEN ON 9NEWS",
+    heading: "Alpine in the Field",
+    description: "Fire damage, full removal. Watch Alpine's crew clear a burnt Denver construction site.",
+    caption: "9News coverage: Alpine clears a burnt residential and commercial building in Denver, CO.",
   },
 ];
 
 export default function AlpineVideoCarousel() {
   const [current, setCurrent] = useState(0);
+  const video = videos[current];
 
   return (
-    <div className="relative">
+    <div>
+      {/* Dynamic header */}
+      <div className="text-center mb-10 transition-all duration-300">
+        <p className="text-xs font-bold tracking-widest text-[#76B852] uppercase mb-2">{video.eyebrow}</p>
+        <h2 className="text-3xl sm:text-4xl font-extrabold text-white">{video.heading}</h2>
+        <p className="text-white/60 mt-3 max-w-xl mx-auto">{video.description}</p>
+      </div>
+
       {/* Video frame */}
-      <div className="aspect-video w-full rounded-lg overflow-hidden bg-black shadow-2xl">
-        <iframe
-          key={current}
-          src={videos[current].src}
-          title={videos[current].title}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowFullScreen
-          className="w-full h-full"
-        />
+      <div className="aspect-video w-full rounded-lg overflow-hidden bg-black shadow-2xl relative">
+        {video.type === "drive" ? (
+          <iframe
+            key={`drive-${current}`}
+            src={video.src}
+            title={video.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full"
+          />
+        ) : (
+          <iframe
+            key={`yt-${current}`}
+            src={video.src}
+            title={video.title}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full h-full"
+          />
+        )}
       </div>
 
       {/* Caption */}
-      <p className="text-center text-white/60 text-sm mt-4">{videos[current].caption}</p>
+      <p className="text-center text-white/60 text-sm mt-4">{video.caption}</p>
 
-      {/* Navigation arrows */}
+      {/* Navigation */}
       <div className="flex items-center justify-center gap-6 mt-6">
         <button
           onClick={() => setCurrent(0)}
@@ -52,7 +79,6 @@ export default function AlpineVideoCarousel() {
           <ChevronLeft size={18} /> Previous
         </button>
 
-        {/* Dots */}
         <div className="flex gap-2">
           {videos.map((_, i) => (
             <button

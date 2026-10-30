@@ -215,25 +215,6 @@ export default function HomePage() {
                 </a>
               </div>
 
-              {/* BBB + 9News trust strip */}
-              <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
-                <a
-                  href="https://www.bbb.org/us/co/arvada/profile/demolition-contractors/alpine-demolition-inc-1296-1000106424"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block"
-                >
-                  <img src="/images/bbb-badge.png" alt="BBB Accredited Business A+ Rating" width={242} height={97} style={{objectFit:'contain'}}/>
-                </a>
-                <a
-                  href="https://www.9news.com/article/news/demolition-crew-starts-to-remove-whats-left-of-burnt-construction-site-in-denver/73-566811632"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 hover:border-white/60 text-white text-sm font-semibold px-5 py-3 rounded transition-colors duration-200"
-                >
-                  <span className="text-[#76B852]">▶</span> As Seen on 9News
-                </a>
-              </div>
             </div>
 
             {/* Right: hero video */}
@@ -253,6 +234,32 @@ export default function HomePage() {
                 </video>
               </div>
             </div>
+          </div>
+
+          {/* Trust badges row — centered below two columns */}
+          <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-6">
+            <a
+              href="https://www.bbb.org/us/co/arvada/profile/demolition-contractors/alpine-demolition-inc-1296-1000106424"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block"
+            >
+              <img src="/images/bbb-badge.png" alt="BBB Accredited Business A+ Rating" width={200} height={80} style={{objectFit:'contain'}}/>
+            </a>
+            <a
+              href="#featured-on"
+              className="inline-block opacity-90 hover:opacity-100 transition-opacity duration-200"
+            >
+              <img src="/images/worlds-greatest-badge.png" alt="Featured on World's Greatest TV Show" width={160} height={160} style={{objectFit:'contain'}}/>
+            </a>
+            <a
+              href="https://www.9news.com/article/news/demolition-crew-starts-to-remove-whats-left-of-burnt-construction-site-in-denver/73-566811632"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 hover:border-white/60 text-white text-sm font-semibold px-5 py-3 rounded transition-colors duration-200"
+            >
+              <span className="text-[#76B852]">▶</span> As Seen on 9News
+            </a>
           </div>
         </div>
       </section>
@@ -386,14 +393,9 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* IN THE NEWS — Video Carousel */}
-      <section className="bg-[#17262B] py-16 sm:py-20">
+      {/* FEATURED ON — Video Carousel */}
+      <section id="featured-on" className="bg-[#17262B] py-16 sm:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="text-center mb-10">
-            <p className="text-xs font-bold tracking-widest text-[#76B852] uppercase mb-2">As Seen On 9News</p>
-            <h2 className="text-3xl sm:text-4xl font-extrabold text-white">Alpine in the Field</h2>
-            <p className="text-white/60 mt-3 max-w-xl mx-auto">Fire damage, full removal. Watch Alpine's crew clear a burnt Denver construction site.</p>
-          </div>
           <AlpineVideoCarousel />
         </div>
       </section>
