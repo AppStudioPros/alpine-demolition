@@ -16,6 +16,7 @@ import {
 } from "lucide-react";
 import LeadForm from "@/components/LeadForm";
 import Footer from "@/components/Footer";
+import AlpineVideoCarousel from "@/components/AlpineVideoCarousel";
 
 export const metadata: Metadata = {
   title: "Alpine Demolition | Commercial & Industrial Demolition Colorado",
@@ -214,8 +215,8 @@ export default function HomePage() {
                 </a>
               </div>
 
-              {/* BBB trust strip */}
-              <div className="mt-8 flex justify-center">
+              {/* BBB + 9News trust strip */}
+              <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
                 <a
                   href="https://www.bbb.org/us/co/arvada/profile/demolition-contractors/alpine-demolition-inc-1296-1000106424"
                   target="_blank"
@@ -223,6 +224,14 @@ export default function HomePage() {
                   className="inline-block"
                 >
                   <img src="/images/bbb-badge.png" alt="BBB Accredited Business A+ Rating" width={242} height={97} style={{objectFit:'contain'}}/>
+                </a>
+                <a
+                  href="https://www.9news.com/article/news/demolition-crew-starts-to-remove-whats-left-of-burnt-construction-site-in-denver/73-566811632"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/30 hover:border-white/60 text-white text-sm font-semibold px-5 py-3 rounded transition-colors duration-200"
+                >
+                  <span className="text-[#76B852]">▶</span> As Seen on 9News
                 </a>
               </div>
             </div>
@@ -374,6 +383,18 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* IN THE NEWS — Video Carousel */}
+      <section className="bg-[#17262B] py-16 sm:py-20">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="text-center mb-10">
+            <p className="text-xs font-bold tracking-widest text-[#76B852] uppercase mb-2">As Seen On 9News</p>
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-white">Alpine in the Field</h2>
+            <p className="text-white/60 mt-3 max-w-xl mx-auto">Fire damage, full removal. Watch Alpine's crew clear a burnt Denver construction site.</p>
+          </div>
+          <AlpineVideoCarousel />
         </div>
       </section>
 
