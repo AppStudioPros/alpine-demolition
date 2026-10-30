@@ -44,6 +44,22 @@ export default function NineNews() {
 
             <p className="text-gray-600 text-base leading-relaxed">The cleanup was expected to take about two to three weeks. Alpine Demolition handled the structural removal and debris clearance as part of the emergency response scope.</p>
           </div>
+
+          {/* Project video */}
+          <div className="mt-12">
+            <p className="text-xs font-bold uppercase tracking-widest text-[#165B38] mb-3">Project Footage</p>
+            <h3 className="text-xl font-extrabold text-[#17262B] mb-5">Watch Alpine's Crew on Site</h3>
+            <div className="aspect-video w-full rounded-xl overflow-hidden shadow-lg bg-black">
+              <iframe
+                src="https://www.youtube.com/embed/PJcIkoSwm6c"
+                title="Alpine Demolition — Burnt Denver Construction Site Removal"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+            <p className="text-gray-500 text-sm mt-3">Footage courtesy of Alpine Demolition. Denver, CO — 2018.</p>
+          </div>
         </div>
       </section>
 
